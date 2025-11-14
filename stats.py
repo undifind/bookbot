@@ -23,3 +23,17 @@ def count_every_char(text):
 
     return every_char_count
 
+def sorting_dictionary(char_count_dict):
+    sorted_char_list = []
+    for item in char_count_dict:
+        sorted_char_list.append(
+            {
+                "char": item,
+                "num": char_count_dict[item]
+            }
+        )
+
+    return sorted_char_list
+
+def sort_on(item):
+    return item["num"]
